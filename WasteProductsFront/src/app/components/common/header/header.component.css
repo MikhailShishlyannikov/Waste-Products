@@ -1,0 +1,17 @@
+
+.mat-button:hover {
+    color: white;
+}
+.mat-menu-item{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    display: inline-block;
+    text-align: left;
+    font-size: 12px;
+    width: 50%;
+}
+
+
+nav{
+    background-color: rgb(138, 175, 255);
+}

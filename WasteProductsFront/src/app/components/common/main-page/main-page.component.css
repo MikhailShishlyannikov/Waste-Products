@@ -1,0 +1,22 @@
+.mat-button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px
+}
+
+.mat-menu-item{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-align: left;
+    font-size: 14px;
+    width: 160px;
+    background-clip: padding-box;
+}
+
+.mat-menu{
+    width: 130px;
+
+}

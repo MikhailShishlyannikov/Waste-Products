@@ -1,0 +1,9 @@
+<ng-container *ngIf="isAuthenificated$ | async; else elseTemplate">
+  <button mat-button (click)="openSheet($event)">
+    Управление аккаунтом
+    <span *ngIf="hasUnreadNotifications$ | async" class="badge badge-secondary">New</span>
+  </button>
+</ng-container>
+<ng-template #elseTemplate>
+  <button mat-button routerLink="/login">Войти</button>
+</ng-template>

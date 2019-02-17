@@ -1,0 +1,24 @@
+<nav>
+  <mat-nav-list>
+    <mat-list-item mat-list-item (click)="openLink($event)" routerLink="/settings" routerLinkActive="active">Настройки</mat-list-item>
+
+    <mat-divider></mat-divider>
+
+    <mat-list-item (click)="openLink($event)" routerLink="/account/notifications" routerLinkActive="active">
+        Уведомления&nbsp;
+        <span *ngIf="hasUnreadNotifications$ | async" class="badge badge-danger">{{unreadNotifcationsCount$ | async}}</span>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+
+    <mat-list-item (click)="openLink($event)" routerLink="/products" routerLinkActive="active">Мои продукты</mat-list-item>
+
+    <mat-list-item (click)="openLink($event)" routerLink="/groups" routerLinkActive="active">Мои группы</mat-list-item>
+
+    <mat-list-item (click)="openLink($event)" routerLink="/friends" routerLinkActive="active">Мои друзья</mat-list-item>
+
+    <mat-divider></mat-divider>
+
+    <mat-list-item (click)="openLink($event)" routerLink="/logout" routerLinkActive="active">Выйти</mat-list-item>
+  </mat-nav-list>
+</nav>
